@@ -16,6 +16,9 @@ get '/devon' do
   'I really love PIPE'
 end
 
-post '/rojo' do
-  'Toga boy'
+get '/cat' do
+ " <div style='border: 3px dashed red'> 
+    <img src= 'http://bit.ly/1eze8aE'>
+   </div>"
 end
+
