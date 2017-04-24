@@ -17,5 +17,6 @@ get '/devon' do
 end
 
 get '/cat' do
- erb(:index)
+  @name = ['Conga', 'Rhubarb', 'Cobra'].sample
+  erb(:index)
 end
