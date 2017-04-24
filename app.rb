@@ -16,7 +16,15 @@ get '/devon' do
   'I really love PIPE'
 end
 
-get '/cat' do
+get '/random-cat' do
   @name = ['Conga', 'Rhubarb', 'Cobra'].sample
+  erb(:index)
+end
+
+get '/named-cat' do
+  @name = params[:name]
+  @colour = params[:colour]
+  @evil = params[:evil]
+  p params
   erb(:index)
 end
