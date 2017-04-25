@@ -21,10 +21,13 @@ get '/random-cat' do
   erb(:index)
 end
 
-get '/named-cat' do
+post '/named-cat' do
   @name = params[:name]
-  @colour = params[:colour]
-  @evil = params[:evil]
-  p params
+  p params[:name]
+  p @name
   erb(:index)
+end
+
+get '/cat-naming-form' do
+  erb(:catnamingform)
 end
